@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@nuxt/devtools": "latest",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.7.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.10"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json,vue}": [
+      "yarn prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "axios": "^1.5.0",
+    "pinia": "^2.1.6"
+  }
+}
